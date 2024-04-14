@@ -211,7 +211,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('https://i.ibb.co/D5yBZsh/1713103760044.jpg'); 
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-attachment: fixed;
     color: #333;
     padding: 20px;
