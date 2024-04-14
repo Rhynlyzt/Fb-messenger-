@@ -26,12 +26,12 @@ module.exports.run = async function ({ api, event, args }) {
 
 		if (input.length < 2) {
 				const responses = [
-						"uy bes bakit miss munanaman ako? 😏",
-						"nandito lang ako para sa'yo, bes. 😊",
-						"may kailangan ka ba, bes? 😁",
-						"kumusta araw mo, bes? 😄",
-						"miss mo ba ako, bes? 😅",
-						"bakit bes liligawan mona ako? 😨"
+						"ano bes ulol kaba 😊🤣?",
+						"alam mo bes wla ako pake sayo. 😊",
+						"may kailangan ka ba, bes pera?shota?house&lot? 😁",
+						"may pera ka bes haha pakealam ko? 😄",
+						"miss mo ba ako, bes ako hnde kta miss? 😅",
+						"tangina ka bes hahaha? 😨"
 				];
 				const randomResponse = responses[Math.floor(Math.random() * responses.length)];
 				api.sendMessage(randomResponse, event.threadID, event.messageID);
