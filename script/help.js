@@ -48,7 +48,7 @@ module.exports.run = async function({
       eventCommands.forEach((eventCommand, index) => {
         helpMessage += `\t${index + 1}.✩ ♬ ₊.${prefix}${eventCommand} ⋆☾⋆⁺₊✧\n`;
       });
-      helpMessage += `\n𝐏𝐀𝐆𝐄 ${page} of ${Math.ceil(commands.length / pages)}\n𝗕𝗧𝗪 𝗖𝗥𝗘𝗔𝗧𝗘 𝗬𝗢𝗨𝗥 𝗢𝗪𝗡 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘\n➪kensei-gmcf.onrender.com`;
+      helpMessage += `\n𝐏𝐀𝐆𝐄 ${page} of ${Math.ceil(commands.length / pages)}\n𝗕𝗧𝗪 𝗖𝗥𝗘𝗔𝗧𝗘 𝗬𝗢𝗨𝗥 𝗢𝗪𝗡 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘\n➪https://rhythmmusicxharmonic.onrender.com/`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
     } else {
       const command = [...Utils.handleEvent, ...Utils.commands].find(([key]) => key.includes(input?.toLowerCase()))?.[1];
